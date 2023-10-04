@@ -1,0 +1,60 @@
+*************************************************************
+Cheat sheet:
+- kodeeksempler og referencer til sider med mere information:
+*************************************************************
+
+*** Lave lister på hjemmesiden: ***
+Lave en punktopstilling:
+    <ul>
+        <li>noget tekst</li>
+        <li>noget tekst</li>
+        <li>noget tekst</li>
+    </ul>
+
+Lave en nummereret liste:
+    <ol>
+        <li>noget tekst</li>
+        <li>noget tekst</li>
+        <li>noget tekst</li>
+    </ol>
+
+
+*** Hente farvekode ud fra et billede og anvend på hjemmesiden: ***
+1. Gå til https://imagecolorpicker.com/en
+2. Upload et billede og få farvekoder fra billedet
+3. Brug koderne i CSS-filen, f.eks. på følgende måde for at ændre farven på alle paragraffer:
+
+    p {
+        color: #783e20;
+    }
+
+
+*** Emoji unicode reference: ***
+https://emojiguide.org/red-heart
+Vælg en emoji og kopier HTML-koden. 
+Se eksempel herunder:
+    
+    <p>Dette er en emoji -> &#x1F60a;</p>
+       Dette er en emoji -> 😊
+
+
+*** Sådan laver du et link til en anden hjemmeside: ***
+<a href="https://www.easv.dk/da/uddannelser/">Alle videregående uddannelser på EASV</a>
+
+
+*** Sådan laver du et link til en underside: ***
+1. Lav en ny fil i mappen med hjemmesidefilerne og navngiv den f.eks. 'kontakt.html'
+2. Lav linket der hvor du vil have det på din side - f.eks. i navigationen:
+    <a href="kontakt.html">Kontakt</a>
+
+
+*** Sådan sætter du et billede ind på hjemmesiden: ***
+1. Find et billede og gem det i mappen 'images'. Brug evt. https://unsplash.com/ til at finde et billede
+2. Sørg for at filnavnet følger disse regler:
+    - ingen mellemrum eller specialtegn
+    - ingen æ, ø eller å
+3. Skriv kode i HTML-filen for at sætte billedet ind (se nedenfor)
+4. Alt-teksten skal indeholde en kort beskrivelse af hvad der er på billedet
+
+<img src="images/drinks.jpeg" alt="3 drinks på et bord">
+
